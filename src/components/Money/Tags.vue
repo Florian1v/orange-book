@@ -1,7 +1,7 @@
 <template>
   <div class="tags">
     <span v-for="tag in currentTags" :key="tag">
-      <Icon :name="tag"></Icon>
+      <Icon :name="tag" class="icons"></Icon>
       {{ tag }}
     </span>
   </div>
@@ -27,8 +27,10 @@ export default class Tags extends Vue {
 </script>
 
 <style lang='scss' scoped>
+.icons {
+  color: darken(#ffda8e, 10%);
+}
 .tags {
-  background-color: blue;
   display: flex;
   font-size: 10px;
   padding: 16px;
@@ -40,6 +42,7 @@ export default class Tags extends Vue {
     width: 24px;
     height: 24px;
   }
+
   span {
     display: flex;
     flex-direction: column;

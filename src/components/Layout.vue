@@ -1,6 +1,6 @@
 <template>
-  <div class="layout-wrapper" >
-    <div class="content" >
+  <div class="layout-wrapper">
+    <div class="content">
       <slot />
     </div>
     <Nav />
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Layout"
+  name: "Layout",
 };
 </script>
 
@@ -18,7 +18,6 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 .content {
   overflow: auto;

@@ -1,22 +1,22 @@
 <template>
   <nav>
     <router-link to="/money" class="item" active-class="selected">
-      <Icon name="money"/>记账
+      <Icon name="money" />记账
     </router-link>
     <router-link to="/general" class="item" active-class="selected">
-      <Icon name="账单" />本月概况
+      <Icon name="账单" />本月
     </router-link>
     <router-link to="/chart" class="item" active-class="selected">
-      <Icon name="statistic" />图表
+      <Icon name="statistic" />统计
     </router-link>
   </nav>
 </template>
 
 <script lang="ts">
-import Icon from '@/components/Icon.vue';
+import Icon from "@/components/Icon.vue";
 export default {
   name: "Nav",
-  components: {Icon}
+  components: { Icon },
 };
 </script>
 
@@ -43,7 +43,7 @@ nav {
     }
   }
   > .item.selected {
-    color:#f00;
+    color: #fcbe32;
   }
 }
 a {
