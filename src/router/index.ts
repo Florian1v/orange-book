@@ -12,16 +12,16 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    redirect: '/general'
+    redirect: '/money'
   },
   {
     path: '/money',
     component: Money
   },
-    {
-      path:'/general',
-      component: General
-    },
+  {
+    path: '/general',
+    component: General
+  },
   {
     path: '/chart',
     component: Chart
@@ -30,14 +30,14 @@ const routes = [
     path: '/general/edit/:id',
     component: EditRecord
   },
-    {
-        path: '*',
-        component: NotFound
-    },
+  {
+    path: '*',
+    component: NotFound
+  },
 ];
 
 const router = new VueRouter({
-    routes
+  routes
 });
 
 export default router;
